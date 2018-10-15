@@ -1,0 +1,46 @@
+{
+  "name": "profile-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config -r module-alias/register server.js",
+    "start": "node -r dotenv/config -r module-alias/register server.js",
+    "test": "mocha -r dotenv/config -r module-alias/register test/**/*.js || true",
+    "dddd": "node -r dotenv/config -r module-alias/register test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-queue": "0.0.12",
+    "mocha": "^5.2.0",
+    "module-alias": "^2.1.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.13",
+    "nock": "^10.0.0",
+    "nodemon": "^1.18.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sinon": "^6.3.4",
+    "string-format": "^2.0.0",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.3.3"
+  },
+  "_moduleAliases": {
+    "@common": "common",
+    "@config": "config",
+    "@controller": "controller",
+    "@middleware": "middleware",
+    "@model": "model",
+    "@module": "module",
+    "@router": "router",
+    "@dataComponent": "dataComponent",
+    "@application": "application",
+    "@testModel": "testModel"
+  }
+}
